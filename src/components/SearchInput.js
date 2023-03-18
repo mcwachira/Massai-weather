@@ -1,12 +1,12 @@
 import { StyleSheet, Text, TextInput, View } from 'react-native'
 import React from 'react'
 
-const SearchInput = () => {
+const SearchInput = ({placeholder}) => {
   return (
     <View style={styles.container}>
     <TextInput
 autoCorrect={false}
-placeholder='Search any City'
+placeholder={placeholder}
 placeholderTextColor='white'
 style={styles.textInput}
 clearButtonMode='always'
